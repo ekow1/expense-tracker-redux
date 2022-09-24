@@ -58,7 +58,11 @@ const dispatch = useDispatch()
 
         <div className='flex gap-8 cursor-pointer'> 
           
-         <p className="mt-2 text-md text-white font-bold">{income}</p>
+        <div className='flex gap-3'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V66.7C101.2 81.9 32 160.9 32 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V445.3c30.9-5.2 59.2-17.7 83.2-35.8c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-13.2 9.9-28.3 17.3-44.8 21.6V132c16.4 4.2 31.6 11.6 44.8 21.6c14.1 10.6 34.2 7.8 44.8-6.4s7.8-34.2-6.4-44.8c-24-18-52.4-30.6-83.2-35.8V32zM192 132V380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124z"/></svg>
+        <p className="mt-2 text-sm text-md font-bold ">
+        
+        {income}
+          </p></div>
         <span className='text-md font-bold' >  edit <i className='bx bxs-plus-circle text-xs mt-3'onClick={() => setShowModal(true)} ></i></span>
         
          </div>
@@ -73,7 +77,11 @@ const dispatch = useDispatch()
 
       <div className="ml-4">
         <h2 className="font-semibold">Total Expenditure</h2>
-        <p className="mt-2 text-sm text-md font-bold">{totalExpense} </p>
+        <div className='flex gap-3 text-whte' > <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V66.7C101.2 81.9 32 160.9 32 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V445.3c30.9-5.2 59.2-17.7 83.2-35.8c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-13.2 9.9-28.3 17.3-44.8 21.6V132c16.4 4.2 31.6 11.6 44.8 21.6c14.1 10.6 34.2 7.8 44.8-6.4s7.8-34.2-6.4-44.8c-24-18-52.4-30.6-83.2-35.8V32zM192 132V380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124z"/></svg>
+        <p className="mt-2 text-sm text-md font-bold ">
+        
+        {totalExpense}
+          </p></div>
       </div>
     </div>
     <div className="flex items-start rounded-xl bg-sky-900 text-white p-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg shadow-lg">
@@ -86,7 +94,13 @@ const dispatch = useDispatch()
 
       <div className="ml-4">
         <h2 className="font-semibold">Balance</h2>
-        <p className="mt-2 text-sm text-md font-bold">{balance}</p>
+
+        <div className='flex gap-3'> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V66.7C101.2 81.9 32 160.9 32 256s69.2 174.1 160 189.3V480c0 17.7 14.3 32 32 32s32-14.3 32-32V445.3c30.9-5.2 59.2-17.7 83.2-35.8c14.1-10.6 17-30.7 6.4-44.8s-30.7-17-44.8-6.4c-13.2 9.9-28.3 17.3-44.8 21.6V132c16.4 4.2 31.6 11.6 44.8 21.6c14.1 10.6 34.2 7.8 44.8-6.4s7.8-34.2-6.4-44.8c-24-18-52.4-30.6-83.2-35.8V32zM192 132V380c-55.2-14.2-96-64.3-96-124s40.8-109.8 96-124z"/></svg>
+        <p className="mt-2 text-sm text-md font-bold ">
+        
+        {balance}
+          </p></div>
+       
       </div>
     </div>
     
