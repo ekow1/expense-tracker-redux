@@ -14,7 +14,7 @@ function App() {
   });
 
   const filterExpense = expense.filter((note) =>
-  note.type.toLowerCase().includes(query.toLowerCase()) 
+  note.title.toLowerCase().includes(query.toLowerCase()) 
 );
 
   return (
