@@ -18,11 +18,11 @@ function Header() {
 
         {showModal ? (
         <>
-          <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="flex justify-center items-center overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none transition duration-500 ease-in-out ">
             <div className="relative xl:w-1/3 my-6 mx-auto md:w-96 w-80 px-5 transition duration-500 ease-in-out">
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none h-1/2">
                 <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t ">
-                  <h3 className="text-3xl font=semibold">General Info</h3>
+                  <h3 className="text-3xl font=semibold">INCOME & EXPENSE</h3>
                   <button
                     className="bg-transparent border-0 text-black float-right"
                     onClick={() => setShowModal(false)}
